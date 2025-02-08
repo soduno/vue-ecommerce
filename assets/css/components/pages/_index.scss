@@ -1,0 +1,58 @@
+.index-categories {
+  a {
+    height: 211px;
+
+    img {
+      max-height: 90px;
+      max-width: 112px;
+    }
+  }
+}
+
+.index-letter-box {
+  .outline-image-box {
+    min-height: 600px;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  h3 {
+    font-size: 2em;
+    margin-bottom: 1.0em;
+  }
+
+  &.grid-cols-2, .grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &.grid-rows-2, .grid-cols-2 {
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.index-contact-box{
+  &__image {
+    min-height: 600px;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.service-lad-os-overtage {
+  p {
+    margin-bottom: 20px !important;
+  }
+  h2 {
+    margin-bottom: 33.2px !important;
+  }
+}
+
+.service-installation-delivery {
+  h2 {
+    font-size: 30px !important;
+    margin: 20px !important;
+  }
+  p {
+    font-size: 16px !important;
+  }
+}

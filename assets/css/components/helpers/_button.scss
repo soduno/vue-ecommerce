@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  border: 1px solid $white;
+}
+.btn-primary {
+  background: $mainBlue;
+  color: $white;
+}
+.btn-dark {
+  background: $white;
+  color: $mainBlue;
+}
+.btn-dark:hover {
+  background: $mainBlue;
+  color: $white;
+}
+.btn-large {
+  font-size: 0.9em;
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  line-height: 55px;
+}
+
+.btn-block {
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+
+.button:not(.btn-disabled):active {
+  background:  rgba($mainBlue, .8);
+}
+
+.btn-disabled {
+  border: 1px solid #999999;
+  background-color: #dddddd;
+  color: #666666;
+}

@@ -1,0 +1,304 @@
+@import "fonts";
+@import "components/variables";
+@import "components/grid";
+@import "components/flex";
+
+/* Helpers */
+@import "components/helpers/inputs";
+@import "components/helpers/flex";
+@import "components/helpers/general";
+@import "components/helpers/margins";
+@import "components/helpers/typo";
+@import "components/helpers/widths";
+@import "components/helpers/button";
+
+/* Pages */
+@import "components/pages/index";
+@import "components/shop/category";
+@import "components/shop/product";
+@import "components/shop/cart";
+
+/* Responsive */
+@import "responsive/general";
+@import "responsive/product";
+@import "responsive/product-category";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: $textMain;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, p, span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main-content {
+  flex: 1 0 auto;
+}
+
+@media screen and (min-width: 767px) {
+  #__nuxt, #__layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  #__layout>div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+footer {
+  &#main-footer {
+    @media screen and (min-width: 767px) {
+      margin-top: auto;
+      flex-shrink: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    .footer-col {
+      font-size: 14px;
+
+      strong {
+        font-size: 17px;
+        font-weight: 300;
+      }
+
+      li {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+.title-white {
+  color: $white;
+  background: rgba(9, 45, 79, 0.8);
+  border-radius: 3px;
+}
+
+.slider-title {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.error-404 {
+  .illustration-404 {
+    max-width: 310px;
+    margin: 40px 0;
+  }
+}
+
+input,
+textarea,
+select {
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type=checkbox] {
+  width: auto;
+}
+
+select {
+  background: none;
+}
+
+.input-container {
+  margin-bottom: 8px;
+  padding: 0 20px;
+}
+
+.label {
+  font-size: 0.8em;
+  font-family: "Open Sans", sans-serif;
+  margin: 3px;
+}
+
+.special {
+  font-weight: 600;
+  color: $mainBlue;
+}
+
+.title1 {
+  font-weight: bold;
+  color: #092d4f;
+}
+
+/*
+  Header slider
+*/
+
+.custom-slider-container {
+  h3 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
+
+#index{
+  #coverSlider {
+    h1, h2, h3, h4 {
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #index{
+    #coverSlider {
+      h1, h2 {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #index{
+    #coverSlider {
+      h1, h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.ref-company-logo-bar {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo-container {
+    max-width: 161px;
+    height: 100%;
+    margin: 40px 60px;
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+/*
+  Full top menu
+*/
+
+.full-width-menus {
+  font-size: 0.8em;
+  width: 100%;
+  position: absolute;
+  background: #f3f5f4;
+  z-index: 1000;
+  padding: 16px;
+  border-top: 1px solid #ececec;
+  transition: visibility 0s, opacity 0.4s ease;
+  visibility: hidden;
+  opacity: 0;
+
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 940px;
+    margin: auto;
+
+    .menu-col {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      margin: 8px 0px;
+
+      .item-label {
+        .hover-icon {
+          height: 21px;
+          width: 21px;
+
+          img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      .item-label:hover {
+        color: #009edd;
+      }
+
+      .col-title {
+        font-weight: 700;
+        color: #092d4f;
+      }
+
+      .col-title,
+      .col-item {
+        cursor: pointer;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.full-width-menus.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .custom-slider-container {
+    .slider-item {
+      .slider-title.slider-title-1 {
+        font-size: 20px;
+      }
+
+      .slider-title.slider-title-2 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .ref-company-logo-bar {
+    .logo-container {
+      margin: 10px 20px;
+    }
+  }
+}
+

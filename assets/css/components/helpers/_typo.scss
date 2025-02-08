@@ -1,0 +1,66 @@
+/* Typo sizes */
+.title-lg {
+}
+
+.title-md {
+  font-size: 1.2em;
+}
+
+.title-sm {
+  font-size: 0.8em;
+}
+
+.text-normal {
+  font-size: 1em;
+}
+
+.text-small {
+  font-size: 0.9em;
+}
+
+.text-md {
+  font-size: 1.3em;
+}
+
+.text-large {
+  font-size: 3.5em;
+}
+
+/* Weights */
+.weight-thin {
+  font-weight: 100;
+}
+
+.weight-bold {
+  font-weight: 600;
+}
+
+.weight-normal {
+  font-weight: 300;
+}
+
+/* Colors */
+.text-blue {
+  color: $mainBlue;
+}
+
+.text-faded {
+  color: $grayLight;
+}
+
+/* links */
+a {
+  color: $mainBlue;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1em;
+  margin: 0.6em 0;
+}
+
+h2 {
+  font-size: 2em;
+  color: $mainBlue;
+  margin-bottom: 0.625em;
+}
